@@ -59,15 +59,33 @@ img {
 
 /* Mobile version */
 .container {
-    max-width: 100%;
+    /* max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px; */
+    display: block;
+    max-width: 1158px;
     margin: 0 auto;
-    padding: 0 16px;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 72px; */
+    padding: 0 15px;
+    */
 }
 
+/* Tablet version
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
 
+/* Desktop version
+@media screen and (max-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-right: 156px;
+        padding-left: 156px;
+    }
+} */
 
 .head .container {
     display: flex;
@@ -253,7 +271,7 @@ img {
 
 /* Adventages section */
 .advantages-icon {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -271,48 +289,37 @@ img {
 
 .hero-list {
     display: flex;
-    flex-direction: column;
+    gap: 24px;
     padding: 0;
-    flex-wrap: wrap;
-    gap: 72px;
-    flex-basis: 100%;
 }
 
 .hero-links {
-    width: 100%;
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages,
 .team {
     color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: capitalize;
-    text-align: center;
+    margin-bottom: 8px;
 }
 
 .text {
+    margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    font-weight: 500;
-
 }
 
 /* Section 2 */
-.container-team-section {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 28px;
-}
 
 .team-section {
     background: #F4F4FD;
     text-align: center;
-
 }
 
 .list-team-icons {
@@ -341,7 +348,6 @@ img {
 .link-team-icon {
     width: 40px;
     height: 40px;
-
 }
 
 .frame-icon {
@@ -361,33 +367,19 @@ img {
 }
 
 .team-list {
-    /* display: flex;
+    display: flex;
     gap: 24px;
     padding: 0;
-    justify-content: space-between; */
-
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    flex-wrap: wrap;
-    gap: 72px;
-    flex-basis: 100%;
-
-
+    justify-content: space-between;
 }
 
 .team-links {
     background-color: #FFFFFF;
-    max-width: 100%;
+    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
-
-}
-
-.worker-picture {
-    margin: 0 auto;
 }
 
 .worker {
