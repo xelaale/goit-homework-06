@@ -50,7 +50,7 @@ img {
     justify-content: inline;
     background-color: #ffffff;
     border-bottom: 1px solid rgba(231, 233, 252, 1);
-    padding: 24px 0;
+    /* padding: 24px 0; */
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     /* max-width: 1440px; */
 }
@@ -59,15 +59,11 @@ img {
 
 /* Mobile version */
 .container {
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 16px;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 72px; */
 }
-
-
 
 .head .container {
     display: flex;
@@ -100,6 +96,8 @@ img {
     display: flex;
     padding: 0;
 }
+
+
 
 .nav-links {
     color: #2E2F42;
@@ -154,6 +152,13 @@ img {
     gap: 40px;
 }
 
+@media only screen and(max-width: 767.98px; ) {
+    .nav-links {
+        display: none;
+    }
+}
+
+
 .address-links {
     display: inline;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,24 +182,31 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 /* Section1 */
 
 .first-section {
     background: #2E2F42;
-    padding: 188px 0;
+    padding: 72px 0;
     color: #fff;
-    /* display: inline-block; */
     text-align: center;
     align-items: center;
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/background/peopleoffice.jpg);
+        url(../images/background/peopleofficemob.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* max-width: 1440px; */
-
 }
+
+@media only screen and (min-resolution: 192dpi) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/background/peopleofficemob@2x.jpg)
+    }
+}
+
 
 .hero-title {
     color: #FFF;
@@ -266,7 +278,7 @@ img {
 .advantages-section,
 .team-section,
 .portfolio {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .hero-list {
@@ -415,7 +427,7 @@ img {
 
 .portfolio {
 
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .portfolio-title {
@@ -485,22 +497,22 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .footer-section {
     background: #2E2F42;
-    padding: 100px 0;
+    padding: 96px 0;
     /* max-width: 1440px; */
 }
 
 .container-footer {
-    display: flex;
+    /* display: flex; */
     align-items: baseline;
 }
 
 .footer-info {
-    margin-right: 120px;
+    margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -511,13 +523,19 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17.5px;
+
 
 }
 
 .logo-accent {
     color: #F4F4FD;
+}
+
+.container-social {
+    margin-bottom: 72px;
 }
 
 .social-title {
@@ -527,12 +545,14 @@ img {
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .social-list {
     display: flex;
     gap: 16px;
     padding-left: 0;
+    justify-content: center;
 }
 
 .footer-social-item {
@@ -563,11 +583,11 @@ img {
 
 /* footer subscribe */
 .subscribe-container {
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .subscribe-form {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: self-end;
     gap: 24px;
@@ -579,10 +599,12 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
+    text-align: center;
+
 }
 
 .subscribe-input-field {
-    min-width: 264px;
+    min-width: 288px;
     height: 40px;
     padding-left: 16px;
     background-color: transparent;
@@ -593,6 +615,11 @@ img {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .subscribe-input-field::placeholder {
@@ -619,6 +646,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .subscribe-btn:hover,
