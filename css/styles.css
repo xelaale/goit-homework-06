@@ -85,7 +85,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    /* margin-right: 76px; */
     gap: 40px;
     text-decoration: none;
 }
@@ -520,11 +519,6 @@ img {
 }
 
 .team-list {
-    /* display: flex;
-    gap: 24px;
-    padding: 0;
-    justify-content: space-between; */
-
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -573,7 +567,6 @@ img {
 /* Section 3 */
 
 .portfolio {
-
     padding: 96px 0;
 }
 
@@ -650,11 +643,10 @@ img {
 .footer-section {
     background: #2E2F42;
     padding: 96px 0;
-    /* max-width: 1440px; */
 }
 
 .container-footer {
-    /* display: flex; */
+
     align-items: baseline;
 }
 
@@ -670,11 +662,11 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: flex;
+    display: inline-block;
+    margin-left: 102px;
+    margin-right: auto;
     justify-content: center;
     margin-bottom: 17.5px;
-    align-items: center;
-
 }
 
 .logo-accent {
@@ -729,12 +721,9 @@ img {
 }
 
 /* footer subscribe */
-.subscribe-container {
-    /* margin-left: 80px; */
-}
+.subscribe-container {}
 
 .subscribe-form {
-    /* display: flex; */
     justify-content: center;
     align-items: self-end;
     gap: 24px;
@@ -868,8 +857,6 @@ img {
 
 .close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .modal-title {
