@@ -114,7 +114,7 @@
             </li>
           </ul>
       
-            </div>
+            </div> 
 
         </div>
       </section>
@@ -585,7 +585,7 @@
 
     <!-- Modal -->
     <!-- Don't forget "is" -->
-    <div class="backdrop s-open" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -594,7 +594,7 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
-        <!-- <div class="modal-field"> -->
+        
         <form name="contact-form" autocomplete="off">
           <div class="modal-field">
             <label class="client-info" for="user-name">Name</label>
@@ -609,9 +609,9 @@
               </svg>
             </div>
           </div>
-          <!-- </form> -->
+          
 
-          <!-- <form name="contact-form" autocomplete="off"> -->
+          
           <div class="modal-field">
             <label class="client-info" for="user-tel">Phone</label>
             <div class="modal-input-wrap">
@@ -626,9 +626,9 @@
               </svg>
             </div>
           </div>
-          <!-- </form> -->
+          
 
-          <!-- <form name="contact-form" autocomplete="off"> -->
+          
           <div class="modal-field">
             <label class="client-info" for="user-email">Email</label>
             <div class="modal-input-wrap">
@@ -672,9 +672,10 @@
                 >
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg> </span
-              >I accept the terms and conditions of the
-              <a class="policy-text" href="#">Privacy Policy</a>
-            </label>
+              >
+              
+            </label><span class="pol-cont">I accept the terms and conditions of the
+              <a class="policy-text" href="#">Privacy Policy</a></span>
           </div>
 
           <button class="modal-button" type="submit">Send</button>
