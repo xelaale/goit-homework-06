@@ -432,7 +432,7 @@ img {
     flex-direction: column;
     padding: 0;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 24px;
     flex-basis: 100%;
 }
 
@@ -523,7 +523,7 @@ img {
     flex-direction: column;
     padding: 0;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 24px;
     flex-basis: 100%;
 
 
@@ -1070,6 +1070,7 @@ img {
         min-width: 768px;
     }
 
+    /* header */
     .nav-list {
         margin-left: 120px;
     }
@@ -1095,6 +1096,9 @@ img {
         padding: 20px 0;
     }
 
+    /* end header */
+
+    /* first section */
     .first-section {
         max-width: 768px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -1104,10 +1108,9 @@ img {
     .hero-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 80px 24px;
+        row-gap: 60px;
         padding: 0;
         flex-direction: row;
-
     }
 
     .hero-links {
@@ -1118,6 +1121,79 @@ img {
     .advantages {
         text-align: start;
     }
+
+    /* end first section */
+
+    /* team section */
+    .team-list {
+        flex-direction: row;
+        row-gap: 24px;
+        justify-content: center;
+    }
+
+    .container-team-section {
+        max-width: 768px;
+    }
+
+    /* endr team section */
+
+    /* portfolio section */
+
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .portfolio-links {
+        flex-basis: calc((100% - 48px) / 2);
+    }
+
+    /* end portfolio section */
+
+    /* footer section */
+    .container-footer {
+        display: flex;
+        column-gap: 24px;
+        row-gap: 72px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .footer-info {
+        margin-bottom: 0;
+    }
+
+    .container-social {
+        margin-bottom: 0;
+    }
+
+    .social-title {
+        text-align: start;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+    }
+
+    .subscribe-container {
+        margin-left: 0;
+
+    }
+
+    .footer-social-title {
+        text-align: start;
+    }
+
+    .subscribe-form {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    /* end footer section */
+
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
