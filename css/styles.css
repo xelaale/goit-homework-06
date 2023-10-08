@@ -1193,13 +1193,122 @@ img {
     }
 
     /* end footer section */
+    /* modal */
+    .modal {
+        width: 408px;
+        height: 584px;
+    }
 
+    /* end modal */
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .first-section {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/background/tab@2x.jpg);
+    }
+}
 
+/* desktop */
+
+@media screen and (min-width: 1440px) {
+
+    .first-section {
+        min-width: 1440px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/background/desk.jpg)
+    }
+
+    .container {
+        max-width: 1440px;
+        padding: 0 156px;
+
+    }
+
+    /* header */
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 156px;
+    }
+
+    .navigation {
+        padding-right: inherit;
+    }
+
+    .address-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .logo {
+        margin-right: 76px;
+    }
+
+
+    /* end header */
+
+    /* first section */
+    .first-section {
+        height: 600px;
+        padding: 188px;
+    }
+
+    /* adventages section */
+    .advantages-section,
+    .team-section,
+    .portfolio {
+        padding: 120px 0;
+    }
+
+    .hero-links {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .advantages-icon {
+        display: flex;
+    }
+
+    /* end adventages section */
+
+    /* team section */
+    .container-team-section {
+        max-width: 1440px;
+    }
+
+    .portfolio-links {
+        flex-basis: calc((100% - 48px) / 3);
+        max-block-size: 360px;
+    }
+
+    /* end team section */
+
+    /* footer */
+    .footer-section {
+        padding: 100px 0;
+
+    }
+
+    .container-footer {
+        flex-wrap: nowrap;
+    }
+
+    .footer-info {
+        margin-right: 120px;
+    }
+
+    .container-social {
+        margin-right: 80px;
+    }
+
+    /* end footer */
+
+
+
+    @media only screen and (min-resolution: 192dpi) {
+        .first-section {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/background/desk@2x.jpg)
+        }
     }
 }

@@ -71,22 +71,6 @@ img {
     */
 }
 
-/* Tablet version
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-/* Desktop version
-@media screen and (max-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        padding-right: 156px;
-        padding-left: 156px;
-    }
-} */
-
 .head .container {
     display: flex;
 }
