@@ -204,8 +204,10 @@
           <h2 class="titles">Our Team</h2>
           <ul class="team-list">
             <li class="team-links">
-              <img
-                class="worker-picture"
+              <img class="worker-picture"
+              srcset="./images/team/imgmark@1x.jpg,
+              ./images/team/imgmark@2x"
+                
                 src="./images/team/markguerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -252,6 +254,7 @@
             <li class="team-links">
               <img
                 class="worker-picture"
+                srcset="./images/team/imgtom@1x.jpg, ./images/team/imgtom@2x"
                 src="./images/team/tomford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -298,6 +301,7 @@
             <li class="team-links">
               <img
                 class="worker-picture"
+                srcset="./images/team/imgcamila@1x.jpg, ./images/team/imgcamila@2x"
                 src="./images/team/camilagarcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -341,6 +345,7 @@
             <li class="team-links">
               <img
                 class="worker-picture"
+                srcset="./images/team/imgdaniel@1x.jpg, ./images/team/imgdaniel@2x"
                 src="./images/team/danielwilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -393,8 +398,30 @@
           <ul class="portfolio-list">
             <li class="portfolio-links">
               <div class="portfolio-box">
+
+                <!-- mobile -->
+                <source
+                media="(max-width: 768px)"
+                srcset="
+                ./images/team/banking_mobile.jpg,
+                ./images/team/banking_mobile@2x">
+
+                <!-- TAblet -->
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/banking_tab.jpg,
+                ./images/team/banking_tab@2x">
+
+                <!-- Desktop -->
+                <source
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/team/banking_desk.jpg,
+                ./images/team/banking_desk@2x">
+
                 <img
-                  src="./images/portfolio/banking.jpg"
+                  src="./images/portfolio/banking_desk.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -412,8 +439,29 @@
             </li>
             <li class="portfolio-links">
               <div class="portfolio-box">
+
+                 <!-- mobile -->
+                <source
+                media="(max-width: 768px)"
+                srcset="
+                ./images/team/payment_mobile.jpg,
+                ./images/team/payment_mobile@2x">
+
+                <!-- TAblet -->
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/payment_tab.jpg,
+                ./images/team/payment_tab@2x">
+
+                <!-- Desktop -->
+                <source
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/team/payment_desk.jpg,
+                ./images/team/payment_desk@2x">
                 <img
-                  src="./images/portfolio/payment.jpg"
+                  src="./images/portfolio/payment_desk.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -431,8 +479,30 @@
             </li>
             <li class="portfolio-links">
               <div class="portfolio-box">
+                
+                <!-- mobile -->
+                <source
+                media="(max-width: 768px)"
+                srcset="
+                ./images/team/meditation_mobile.jpg,
+                ./images/team/meditation_mobile@2x">
+
+                <!-- TAblet -->
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/meditation_tab.jpg,
+                ./images/team/meditation_tab@2x">
+
+                <!-- Desktop -->
+                <source
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/team/meditation_desk.jpg,
+                ./images/team/meditation_desk@2x">
+
                 <img
-                  src="./images/portfolio/meditation.jpg"
+                  src="./images/portfolio/meditation_desk.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -450,8 +520,29 @@
             </li>
             <li class="portfolio-links">
               <div class="portfolio-box">
+
+                <!-- mobile -->
+                <source
+                media="(max-width: 768px)"
+                srcset="
+                ./images/team/taxi_mobile.jpg,
+                ./images/team/taxi_mobile@2x">
+
+                <!-- TAblet -->
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/taxi_tab.jpg,
+                ./images/team/taxi_tab@2x">
+
+                <!-- Desktop -->
+                <source
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/team/taxi_desk.jpg,
+                ./images/team/taxi_desk@2x">
                 <img
-                  src="./images/portfolio/service.jpg"
+                  src="./images/portfolio/taxi_desk.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -469,8 +560,29 @@
             </li>
             <li class="portfolio-links">
               <div class="portfolio-box">
+
+                <!-- mobile -->
+                <source
+                media="(max-width: 768px)"
+                srcset="
+                ./images/team/screen_mobile.jpg,
+                ./images/team/screen_mobile@2x">
+
+                <!-- TAblet -->
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/screen_tab.jpg,
+                ./images/team/screen_tab@2x">
+
+                <!-- Desktop -->
+                <source
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/team/screen_desk.jpg,
+                ./images/team/screen_desk@2x">
                 <img
-                  src="./images/portfolio/illustrations.jpg"
+                  src="./images/portfolio/screen_desk.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -488,8 +600,29 @@
             </li>
             <li class="portfolio-links">
               <div class="portfolio-box">
+
+                <!-- mobile -->
+                <source
+                media="(max-width: 768px)"
+                srcset="
+                ./images/team/courses_mobile.jpg,
+                ./images/team/courses_mobile@2x">
+
+                <!-- TAblet -->
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/courses_tab.jpg,
+                ./images/team/courses_tab@2x">
+
+                <!-- Desktop -->
+                <source
+                media="(min-width: 1158px)"
+                srcset="
+                ./images/team/courses_desk.jpg,
+                ./images/team/courses_desk@2x">
                 <img
-                  src="./images/portfolio/courses.jpg"
+                  src="./images/portfolio/courses_desk.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
