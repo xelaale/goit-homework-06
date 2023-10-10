@@ -1068,6 +1068,8 @@ img {
         padding: 20px 0;
     }
 
+    .nav-list {}
+
     .address-list {
         display: block;
     }
@@ -1294,16 +1296,32 @@ img {
     /* end adventages section */
 
     /* team section */
-    .container-team-section {
-        width: 100%;
+    .container-team-section {}
+
+    .team-list {
+        /* display: flex;
+        gap: 24px;
+        padding: 0;
+        justify-content: space-between; */
+    }
+
+    .team-links {
+        /* width: calc((100% - 48px) / 4); */
     }
 
     /* end team section */
 
+    .portfolio-links {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .portfolio-list {
+        row-gap: 48px;
+    }
+
     /* footer */
     .footer-section {
         padding: 100px 0;
-
     }
 
     .footer-text {
@@ -1314,18 +1332,16 @@ img {
         flex-wrap: nowrap;
     }
 
-    .footer-info {}
-
-    .container-social {}
 
 
     /* end footer */
 
+}
+}
 
-
-    @media only screen and (min-resolution: 192dpi) {
-        .first-section {
-            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/background/desk@2x.jpg)
-        }
+@media only screen and (min-resolution: 192dpi) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/background/desk@2x.jpg)
     }
+}
