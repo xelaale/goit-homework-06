@@ -65,6 +65,7 @@ img {
 
 .head .container {
     display: flex;
+    position: relative;
 }
 
 .navigation {
@@ -190,8 +191,8 @@ img {
 /* icon */
 .head-menu {
     position: absolute;
-    top: 24px;
-    right: 16px;
+    top: 0px;
+    right: 0px;
     width: 24px;
     height: 24px;
     display: flex;
@@ -212,6 +213,7 @@ img {
 
 /* Mobile modal */
 .menu-container {
+
     background-color: #FFF;
     width: 100%;
     height: 100%;
@@ -447,12 +449,14 @@ img {
     text-align: center;
 }
 
+
 .text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
     font-weight: 500;
+
 
 }
 
@@ -1065,13 +1069,18 @@ img {
 
     /* header */
     .head {
-        padding: 20px 0;
+        padding: 8px 0;
+    }
+
+    .logo {
+        margin-right: 120px;
     }
 
     .nav-list {}
 
     .address-list {
-        display: block;
+        flex-direction: column;
+        gap: 12px;
     }
 
     .address-links {
@@ -1120,6 +1129,7 @@ img {
 
     .advantages {
         text-align: start;
+        margin-bottom: 8px;
     }
 
     /* end first section */
@@ -1132,7 +1142,7 @@ img {
     }
 
     .container-team-section {
-        width: 584px;
+        width: 552px;
     }
 
     /* endr team section */
@@ -1157,13 +1167,6 @@ img {
     /* end portfolio section */
 
     /* footer section */
-    .footer-section {
-        padding: 96px 108px;
-    }
-
-    .subscribe-input-field {
-        min-width: 264px;
-    }
 
     .container-footer {
         display: flex;
@@ -1171,7 +1174,15 @@ img {
         row-gap: 72px;
         flex-wrap: wrap;
         align-items: baseline;
+        width: 584px;
+        justify-content: center;
     }
+
+    .subscribe-input-field {
+        min-width: 264px;
+    }
+
+
 
     .footer-info {
         margin-bottom: 0;
@@ -1226,7 +1237,7 @@ img {
 
     .container {
         min-width: 1158px;
-        padding: 0 156px;
+
 
     }
 
@@ -1237,8 +1248,22 @@ img {
 
     }
 
+    .head {
+        padding: 20px 0;
+    }
+
+    .address-contact {
+        font-size: 16px;
+
+        font-weight: 400;
+        line-height: 1.5;
+
+        letter-spacing: 0.02em;
+    }
+
     .address-list {
         display: flex;
+        flex-direction: row;
         gap: 40px;
     }
 
@@ -1296,7 +1321,9 @@ img {
     /* end adventages section */
 
     /* team section */
-    .container-team-section {}
+    .container-team-section {
+        width: 1158px;
+    }
 
     .team-list {
         /* display: flex;
@@ -1330,8 +1357,19 @@ img {
 
     .container-footer {
         flex-wrap: nowrap;
+        justify-content: start;
+        column-gap: 0;
+        row-gap: 0;
+        min-width: 1158px;
     }
 
+    .footer-info {
+        margin-right: 120px;
+    }
+
+    .container-social {
+        margin-right: 80px;
+    }
 
 
     /* end footer */
