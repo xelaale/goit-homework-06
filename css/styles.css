@@ -1061,16 +1061,11 @@ img {
     .container {
         min-width: 768px;
         margin: 0 auto;
-
     }
 
     /* header */
     .head {
-        padding: 13px 0;
-    }
-
-    .nav-list {
-        margin-left: 120px;
+        padding: 20px 0;
     }
 
     .address-list {
@@ -1225,16 +1220,10 @@ img {
 
 /* desktop */
 
-@media screen and (min-width: 1440px) {
-
-    .first-section {
-        min-width: 1440px;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/background/desk.jpg)
-    }
+@media screen and (min-width: 1158px) {
 
     .container {
-        max-width: 1440px;
+        min-width: 1158px;
         padding: 0 156px;
 
     }
@@ -1243,11 +1232,7 @@ img {
     .header-container {
         display: flex;
         justify-content: space-between;
-        padding: 0 156px;
-    }
 
-    .navigation {
-        padding-right: inherit;
     }
 
     .address-list {
@@ -1264,35 +1249,53 @@ img {
 
     /* first section */
     .first-section {
-        height: 600px;
-        padding: 188px;
+        /* min-width: 1158px; */
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/background/desk.jpg)
     }
 
-    /* adventages section */
-    .advantages-section,
-    .team-section,
-    .portfolio {
-        padding: 120px 0;
-    }
-
-    .hero-links {
-        width: calc((100% - 72px) / 4);
+    .first-section {
+        padding: 188px 0;
     }
 
     .advantages-icon {
         display: flex;
     }
 
+    .hero-list {
+        gap: 0 24px;
+    }
+
+    .hero-links {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .advantages {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+
+    }
+
+    .advantages-section,
+    .team-section,
+    .portfolio {
+        padding: 120px 0;
+    }
+
     /* end adventages section */
 
     /* team section */
     .container-team-section {
-        max-width: 1440px;
-    }
-
-    .portfolio-links {
-        flex-basis: calc((100% - 48px) / 3);
-        max-block-size: 360px;
+        width: 100%;
     }
 
     /* end team section */
@@ -1303,17 +1306,18 @@ img {
 
     }
 
+    .footer-text {
+        width: 268px;
+    }
+
     .container-footer {
         flex-wrap: nowrap;
     }
 
-    .footer-info {
-        margin-right: 120px;
-    }
+    .footer-info {}
 
-    .container-social {
-        margin-right: 80px;
-    }
+    .container-social {}
+
 
     /* end footer */
 
@@ -1325,4 +1329,3 @@ img {
                 url(../images/background/desk@2x.jpg)
         }
     }
-}
