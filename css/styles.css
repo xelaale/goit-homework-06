@@ -1104,7 +1104,7 @@ img {
     .first-section {
         padding: 112px 0;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/background/tab2.jpg)
+            url(../images/background/tab@2x.jpg)
     }
 
     .hero-title {
@@ -1175,7 +1175,8 @@ img {
         flex-wrap: wrap;
         align-items: baseline;
         width: 584px;
-        justify-content: center;
+
+        min-width: 584px;
     }
 
     .subscribe-input-field {
